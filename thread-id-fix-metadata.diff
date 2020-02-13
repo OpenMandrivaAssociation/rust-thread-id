@@ -1,0 +1,12 @@
+--- thread-id-3.3.0/Cargo.toml	2018-03-23T13:49:40+01:00
++++ thread-id-3.3.0/Cargo.toml	2018-10-27T23:58:09.354520+02:00
+@@ -15,9 +15,3 @@
+ 
+ [target.'cfg(unix)'.dependencies]
+ libc = "0.2.6"
+-
+-[target.'cfg(windows)'.dependencies]
+-winapi = { version = "0.3", features = ["processthreadsapi"] }
+-
+-[target.'cfg(target_os = "redox")'.dependencies]
+-redox_syscall = "0.1"
